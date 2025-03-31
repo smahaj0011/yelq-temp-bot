@@ -22,6 +22,7 @@ const client = new Client({
   ],
   partials: [Partials.Channel, Partials.Message, Partials.Reaction],
 });
+const keep_alive = require('./keep_alive')
 
 client.commands = new Collection();
 
